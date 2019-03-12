@@ -4,6 +4,7 @@
 \usepackage[russian]{babel}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{float}
 \begin{document}
     \title{Лабораторная работа №1\\Ларионов Даниил\\НФИбд-01-16\\Вариант 6}
     \maketitle
@@ -46,6 +47,22 @@
     Начальные условия для моделей одинаковы: численность армии x = 50000, y = 69000.
     
     \section{Результаты}
+    \subsection{График для первой моедли (Регулярные армии)}
+    \begin{figure}[H]
+        \centering
+        \includegraphics{lab02/lab2-graph0.png}
+        \caption{График числа солдат в каждой армии от времени}
+        \label{fig:model1}
+    \end{figure}
+    В данном случае проиграла армия X. Численность солдат в ней достигла нуля в момент времени t=1.55.
+    \subsection{График для второй модели (Регулярные армии + партизаны)}
+    \begin{figure}[H]
+        \centering
+        \includegraphics{lab02/lab2-graph.png}
+        \caption{График числа солдат от времени}
+        \label{fig:model2l}
+    \end{figure}
+    В данном случае, скорее всего имеет место ошибка в расчетах или в составлении системы ДУ, посколько Армия Y полностью вымирает в момент времени t=0.0004.
     
     
 \end{document}
